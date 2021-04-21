@@ -1,3 +1,3 @@
 export default function OOS() {
-  return 'OOS';
+  return 'Sold Out';
 }
