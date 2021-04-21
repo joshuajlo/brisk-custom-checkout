@@ -12,7 +12,6 @@ export default function Index() {
           It seems that there is no available stock right now. Follow our Twitter @BriskAIO to be notified on our next 
           planned restock.
         </p>
-        <div className="bg-light rounded my-1 px-2 py-1 text-monospace"></div>
         </div>
       </div>
     </div>
