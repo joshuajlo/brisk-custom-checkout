@@ -43,7 +43,7 @@ export default function Purchase({ release }) {
       } else {
         const paymentIntent = checkout.payment_intent_client_secret && await stripe.retrievePaymentIntent(checkout.payment_intent_client_secret);
 
-        alert(`${paymentIntent?.last_payment_error.message || 'Your card was declined.'} Please try a different card.`);
+        alert(`${paymentIntent?.last_payment_error.message || 'Payment Failed.'} Please try a different card.`);
         actions.setSubmitting(false);
       }
     }).catch((error) => {
@@ -88,7 +88,7 @@ export default function Purchase({ release }) {
                   <label htmlFor="card">Card information</label>
                   <Field className="form-control" name="card" as={CardElement} />
                 </div>
-                <button className="btn btn-primary w-100" type="submit" disabled={isSubmitting}>Pay now</button>
+                <button className="btn btn-primary w-100" type="submit" disabled={isSubmitting}>Purchase</button>
               </Form>
             )}
           </Formik>
