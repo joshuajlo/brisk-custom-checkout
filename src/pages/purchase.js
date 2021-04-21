@@ -79,11 +79,11 @@ export default function Purchase({ release }) {
               <Form>
                 <div className="form-group">
                   <label htmlFor="email">Email address</label>
-                  <Field className="form-control" name="email" placeholder="johndoe@gmail.com" />
+                  <Field className="form-control" name="email" placeholder="brisk@email.com" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="name">Full name</label>
-                  <Field className="form-control" name="name" placeholder="John Doe" />
+                  <Field className="form-control" name="name" placeholder="Brisk AIO" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="card">Card information</label>
